@@ -4,7 +4,7 @@ const SingleEvent = ({item}) => {
 
     const {date,name,desc,accuracy}=item
     return (
-    <div className='mx-4 rounded-xl'>
+    <div className='md:mx-4 rounded-xl max-w-[18rem] m-auto'>
         <h3 className='bg-[#232b76] text-white text-center py-2 rounded-tr-xl rounded-tl-xl'>{date}</h3>
         <p className='text-[#232b76] text-center pt-5 pb-10 px-3 border-b border-[#707070] h-[9rem]'>{desc}</p>
         <h1 className='text-center text-[#009FE3] py-2 text-[18px] font-semibold'>{name}</h1>

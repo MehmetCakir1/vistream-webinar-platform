@@ -19,3 +19,13 @@
 
 /*UPCOMING EVENTS SLIDER*/
 
+.cloud-effect{
+    width: 16.5rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to left bottom,#F7F8FB 5%,rgba(255,255,255,0.6) 50%,rgba(255,255,255,0.3) 70%,rgba(255,255,255,0.1) 70%,rgba(255,255,255,0) 90%);
+    z-index: 10;
+
+}
