@@ -9,7 +9,7 @@
 - __I used react-router-dom to ds__<br/>
 - __I used custom hook in order to set countdown__<br/>
 - __I used React-slick library for creating slider__<br/>
-- __You can change the speakers if you click the buttons that shows the webinar dates above them__<br/>
+- __You can change the speakers if you click the buttons that show the webinar dates above them__<br/>
 - __You can see the biography of speakers' if you click the 'See Bio' button__<br/>
 
 
