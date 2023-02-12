@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sessions = () => {
   return (
-    <div>Sessions</div>
+    <div className='min-h-[calc(100vh-220px)]'>Sessions</div>
   )
 }
 

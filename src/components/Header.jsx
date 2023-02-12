@@ -27,8 +27,8 @@ const Header = () => {
 
       </section>
       <section>
-        <img src="/assets/loginButton.svg" alt="login" />
-        <img src="/assets/registerButton.svg" alt="register" />
+        <img src="/assets/loginButton.svg" alt="login"  className='cursor-pointer'/>
+        <img src="/assets/registerButton.svg" alt="register" className='cursor-pointer' />
       </section>
 
     </header>

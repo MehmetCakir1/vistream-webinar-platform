@@ -2,7 +2,7 @@ import React from 'react'
 
 const Teaser = () => {
   return (
-    <div>Teaser</div>
+    <div className='min-h-[calc(100vh-220px)]'>Teaser</div>
   )
 }
 

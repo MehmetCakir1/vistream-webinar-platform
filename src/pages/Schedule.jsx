@@ -2,7 +2,7 @@ import React from 'react'
 
 const Schedule = () => {
   return (
-    <div>Schedule</div>
+    <div className='min-h-[calc(100vh-220px)]'>Schedule</div>
   )
 }
 

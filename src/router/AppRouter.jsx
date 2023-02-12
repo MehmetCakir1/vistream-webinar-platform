@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import SpeakerBio from "../components/SpeakerBio";
 import AllUpcomingEvents from "../pages/AllUpcomingEvents";
 import LandingPage from "../pages/LandingPage";
 import Overview from "../pages/Overview";
@@ -21,6 +22,7 @@ const AppRouter = () => {
           <Route path="/schedule" element={<Schedule/>} />
           <Route path="/teaser" element={<Teaser/>} />
           <Route path="/upcomingevents" element={<AllUpcomingEvents/>} />
+          <Route path="/speakers/:id" element={<SpeakerBio/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
