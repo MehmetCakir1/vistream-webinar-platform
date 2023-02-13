@@ -32,7 +32,8 @@ const Navbar = () => {
                   : "border-0"
               } 
         to="sessions">SESSIONS</NavLink>
-        <NavLink 
+        <div className='relative'>
+          <NavLink 
          className={({ isActive }) =>
                 isActive 
                   ? "border-b border-[#232B76]"
@@ -42,6 +43,11 @@ const Navbar = () => {
         onMouseOver={()=>setShowMModal(true)}
         onMouseLeave={()=>setShowMModal(false)}
         >OVERVIEW</NavLink>
+        {
+          showModal &&  <Modal />
+        }
+        </div>
+        
         <NavLink 
          className={({ isActive }) =>
                 isActive 
@@ -64,9 +70,7 @@ const Navbar = () => {
               } 
         to="upcomingevents">UPCOMING EVENTS</NavLink>
         </div>
-        {
-          showModal &&  <Modal />
-        }
+       
       </div>
       {
         showNavbar &&  <div className=' flex flex-wrap justify-center items-center gap-3 py-3 text-sm md:hidden text-[#232B76] font-bold'>
@@ -84,13 +88,15 @@ const Navbar = () => {
                   : "border-0"
               } 
     to="sessions">SESSIONS</NavLink>
-    <NavLink
+    <div>
+       <NavLink
      className={({ isActive }) =>
                 isActive 
                   ? "border-b border-[#232B76]"
                   : "border-0"
               } 
     to="overview">OVERVIEW</NavLink>
+    </div>
     <NavLink
      className={({ isActive }) =>
                 isActive 
