@@ -9,16 +9,16 @@ const Navbar = () => {
   
 
   return (
-    <nav className='flex flex-col w-full'>
+    <nav className='flex flex-col w-full fixed top-0 z-50 bg-white'>
       <div className='w-full flex items-center  text-[#232B76] font-bold text-[14px] lg:shadow-[0_3px_6px_#1490DF] relative'>
-      <div className='navbar-logo flex justify-between items-center gap-5 lg:gap-12 py-3 lg:py-9  w-full md:w-auto md:mr-[2.5rem]'>
+      <div className='navbar-logo flex justify-between items-center gap-5 lg:gap-12 py-1 lg:py-6  w-full md:w-auto md:mr-[2.5rem]'>
       {/* <div className='navbar-logo flex justify-between items-center gap-5 lg:gap-12 py-3 lg:py-9 pl-[1rem] xl:pl-[6rem] 2xl:pl-[17rem] w-full md:w-auto md:mr-[2.5rem]'> */}
         <NavLink to="/"><img src="assets/logo.svg" alt="logo" className=' object-cover'/></NavLink>
         <FaBars className='text-3xl md:hidden pr-2'
         onClick={()=>setShowNavbar(!showNavbar)}
         />
       </div>
-        <div className='items-center gap-5 lg:gap-12 py-9 hidden md:flex '>
+        <div className='items-center gap-5 lg:gap-12 py-6 hidden md:flex '>
         <NavLink  className={({ isActive }) =>
                 isActive 
                   ? "border-b border-[#232B76]"
