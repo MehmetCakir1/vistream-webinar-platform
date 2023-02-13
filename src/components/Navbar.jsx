@@ -19,15 +19,50 @@ const Navbar = () => {
         />
       </div>
         <div className='items-center gap-5 lg:gap-12 py-9 hidden md:flex '>
-        <NavLink to="/">HOME</NavLink>
-        <NavLink to="sessions">SESSIONS</NavLink>
-        <NavLink to="overview"
+        <NavLink  className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+              to="/">HOME</NavLink>
+        <NavLink 
+         className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+        to="sessions">SESSIONS</NavLink>
+        <NavLink 
+         className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+        to="overview"
         onMouseOver={()=>setShowMModal(true)}
         onMouseLeave={()=>setShowMModal(false)}
         >OVERVIEW</NavLink>
-        <NavLink to="schedule">SCHEDULE</NavLink>
-        <NavLink to="teaser">TEASER</NavLink>
-        <NavLink to="upcomingevents">UPCOMING EVENTS</NavLink>
+        <NavLink 
+         className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+        to="schedule">SCHEDULE</NavLink>
+        <NavLink 
+         className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+        to="teaser">TEASER</NavLink>
+        <NavLink 
+         className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+        to="upcomingevents">UPCOMING EVENTS</NavLink>
         </div>
         {
           showModal &&  <Modal />
@@ -35,12 +70,48 @@ const Navbar = () => {
       </div>
       {
         showNavbar &&  <div className=' flex flex-wrap justify-center items-center gap-3 py-3 text-sm md:hidden text-[#232B76] font-bold'>
-    <NavLink to="/">HOME</NavLink>
-    <NavLink to="sessions">SESSIONS</NavLink>
-    <NavLink to="overview">OVERVIEW</NavLink>
-    <NavLink to="schedule">SCHEDULE</NavLink>
-    <NavLink to="teaser">TEASER</NavLink>
-    <NavLink to="upcomingevents">UPCOMING EVENTS</NavLink>
+    <NavLink
+     className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+    to="/">HOME</NavLink>
+    <NavLink
+     className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+    to="sessions">SESSIONS</NavLink>
+    <NavLink
+     className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+    to="overview">OVERVIEW</NavLink>
+    <NavLink
+     className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+    to="schedule">SCHEDULE</NavLink>
+    <NavLink
+     className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+    to="teaser">TEASER</NavLink>
+    <NavLink
+     className={({ isActive }) =>
+                isActive 
+                  ? "border-b border-[#232B76]"
+                  : "border-0"
+              } 
+    to="upcomingevents">UPCOMING EVENTS</NavLink>
         </div>
       }
     
