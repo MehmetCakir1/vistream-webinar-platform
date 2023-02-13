@@ -10,12 +10,12 @@ const SingleEvent = ({item}) => {
         <h1 className='text-center text-[#009FE3] py-2 text-[18px] font-semibold'>{name}</h1>
         {accuracy ? (
             <div className='py-3 flex items-center justify-center gap-3 text-[13px] font-semibold'>
-                <button className='text-white bg-[#009FE3] rounded-3xl py-2 px-3 hover:bg-[#042164] hover:text-white '>REGISTER</button>
-                <button className='text-white bg-[#042164] rounded-3xl py-2 px-3 hover:bg-[#009FE3] hover:text-white'>ADD TO CALENDER</button>
+                <button className='text-white bg-[#009FE3] rounded-3xl py-2 px-3 hover:bg-white hover:text-[#009FE3]  transition-all duration-1000 ease-in hover:outline outline-[#009FE3]'>REGISTER</button>
+                <button className='text-white bg-[#042164] rounded-3xl py-2 px-3 hover:bg-white hover:text-[#042164] transition-all duration-1000 ease-in hover:outline outline-[#042164]'>ADD TO CALENDER</button>
             </div>
         ):(
             <div className='py-3 flex items-center justify-center text-[13px] font-semibold'>
-                <button className='text-[#009FE3] rounded-3xl py-2 px-3 border border-[#009FE3] hover:bg-[#042164] hover:text-white hover:border-none'>MORE DETAILS COMING SOON</button>
+                <button className='text-[#009FE3] rounded-3xl py-2 px-3 border border-[#009FE3] hover:bg-[#042164] hover:text-white hover:border-none transition-all duration-1000 ease-in'>MORE DETAILS COMING SOON</button>
                 </div>
         )}
     </div>
