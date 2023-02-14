@@ -78,8 +78,8 @@ const Navbar = () => {
         </div>
        
       </div>
-      {
-        showNavbar &&  <div className=' flex flex-col justify-center items-end gap-3 py-5 px-5 text-sm md:hidden bg-[#232B76] text-white font-bold mobileNavbar w-[60%] absolute top-[5rem] right-0 rounded-l-[50%] max-w-[16rem] shadow-[0_3px_6px_#232B76]'>
+      
+        <div className={`${!showNavbar ? 'scale-0 flex flex-col justify-center items-end gap-3 py-5 px-5 text-sm md:hidden bg-[#232B76] text-white font-bold mobileNavbar  absolute top-[5rem] right-0 rounded-l-[50%] w-[60%] max-w-[16rem] shadow-[0_3px_6px_#232B76]' : "scale-100 flex flex-col justify-center items-end gap-3 py-5 px-5 text-sm md:hidden bg-[#232B76] text-white font-bold mobileNavbar  absolute top-[5rem] right-0 rounded-l-[50%] w-[60%] max-w-[16rem] shadow-[0_3px_6px_#232B76]" } transition-transform duration-700 ease-linear`}>
     <NavLink
      className={({ isActive }) =>
                 isActive 
@@ -125,7 +125,7 @@ const Navbar = () => {
               } 
     to="upcomingevents">UPCOMING EVENTS</NavLink>
         </div>
-      }
+
     </nav>
   )
 }
