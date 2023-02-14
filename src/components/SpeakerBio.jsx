@@ -6,7 +6,7 @@ const SpeakerBio = () => {
     const {id}=useParams()
     const currentSpeaker=speakersData.find(item=>item.id==id)
   return (
-    <div className='w-full max-w-[40rem] m-auto py-5'>
+    <div className='w-full max-w-[40rem] m-auto py-5 mt-[7rem]'>
         <img src={currentSpeaker.img} alt={currentSpeaker.name} className="object-cover block m-auto" />
         <h1 className='text-center font-semibold text-xl text-[#232b76]'>{currentSpeaker.name}</h1>
         <p className='text-center'>{currentSpeaker.desc}</p>
