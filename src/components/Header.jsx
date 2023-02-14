@@ -5,7 +5,7 @@ const Header = () => {
   
   
   return (
-    <header className="header h-[500px] 2xl:h-[721px] w-full max-w-[1920px] m-auto flex flex-col lg:flex-row justify-center items-center gap-8 mt-[5rem] ">
+    <header className="header h-[500px] 2xl:h-[721px] w-full max-w-[1920px] m-auto flex flex-col lg:flex-row justify-center items-center gap-8 mt-[4rem] ">
       <section className='max-w-[780px] 2xl:translate-x-[-7rem] '>
         <h3 className='text-[#232B76] text-xl lg:text-[21px] font-semibold py-1 2xl:py-2 px-2 '>NEXT WEBINAR</h3>
         <h1 className='text-white text-xl lg:text-[40px] leading-none italic pt-1 pb-5 2xl:pb-7 px-2 '>EVENT NAME it amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h1>
