@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {NavLink} from "react-router-dom"
 import Modal from './Modal'
-import { FaBars} from "react-icons/fa";
+import { FaBars, FaTimes} from "react-icons/fa";
 
 const Navbar = () => {
   const [showModal,setShowMModal]=useState(false)
@@ -11,14 +11,20 @@ const Navbar = () => {
   return (
     <nav className='flex flex-col w-full fixed top-0 z-50 bg-white'>
       <div className='w-full flex items-center  text-[#232B76] font-bold text-[14px] lg:shadow-[0_3px_6px_#1490DF] relative'>
-      <div className='navbar-logo flex justify-between items-center gap-5 lg:gap-12 py-1 lg:py-6  w-full md:w-auto md:mr-[2.5rem]'>
+      <div className='navbar-logo flex justify-between items-center gap-5 lg:gap-12 py-1 lg:py-5  w-full md:w-auto md:mr-[2.5rem]'>
       {/* <div className='navbar-logo flex justify-between items-center gap-5 lg:gap-12 py-3 lg:py-9 pl-[1rem] xl:pl-[6rem] 2xl:pl-[17rem] w-full md:w-auto md:mr-[2.5rem]'> */}
         <NavLink to="/"><img src="assets/logo.svg" alt="logo" className=' object-cover'/></NavLink>
-        <FaBars className='text-3xl md:hidden pr-2'
-        onClick={()=>setShowNavbar(!showNavbar)}
-        />
+        {
+          showNavbar ? (
+          <FaTimes className='text-3xl md:hidden pr-2 text-red-700'
+          onClick={()=>setShowNavbar(false)}
+          />):( 
+            <FaBars className='text-3xl md:hidden pr-2 faBars'
+          onClick={()=>setShowNavbar(true)}
+          />)
+        }
       </div>
-        <div className='items-center gap-5 lg:gap-12 py-6 hidden md:flex '>
+        <div className='items-center gap-5 lg:gap-12 py-5 hidden md:flex '>
         <NavLink  className={({ isActive }) =>
                 isActive 
                   ? "border-b border-[#232B76]"
@@ -73,7 +79,7 @@ const Navbar = () => {
        
       </div>
       {
-        showNavbar &&  <div className=' flex flex-wrap justify-center items-center gap-3 py-3 text-sm md:hidden text-[#232B76] font-bold'>
+        showNavbar &&  <div className=' flex flex-col justify-center items-end gap-3 py-5 px-5 text-sm md:hidden bg-[#232B76] text-white font-bold mobileNavbar w-[60%] absolute top-[5rem] right-0 rounded-l-[50%] max-w-[16rem] shadow-[0_3px_6px_#232B76]'>
     <NavLink
      className={({ isActive }) =>
                 isActive 
@@ -120,7 +126,6 @@ const Navbar = () => {
     to="upcomingevents">UPCOMING EVENTS</NavLink>
         </div>
       }
-    
     </nav>
   )
 }

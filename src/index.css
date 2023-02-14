@@ -50,5 +50,8 @@
     top: 0;
     background-image: linear-gradient(-90deg,rgba(255,255,255,.9) 25%,rgba(255,255,255,.7) 35%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,0.4) 70%,rgba(255,255,255,0.2) 80%,rgba(255,255,255,0) 100%);
     z-index: 10;
-
 }  
+
+.faBars{
+    transform: rotateZ("360deg");
+}
